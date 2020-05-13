@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Respira/static/css/main.3d537b83.chunk.css",
-    "main.js": "/Respira/static/js/main.cbb5484c.chunk.js",
-    "main.js.map": "/Respira/static/js/main.cbb5484c.chunk.js.map",
+    "main.js": "/Respira/static/js/main.9c6747cf.chunk.js",
+    "main.js.map": "/Respira/static/js/main.9c6747cf.chunk.js.map",
     "runtime-main.js": "/Respira/static/js/runtime-main.df3d74f6.js",
     "runtime-main.js.map": "/Respira/static/js/runtime-main.df3d74f6.js.map",
     "static/js/2.2b825f24.chunk.js": "/Respira/static/js/2.2b825f24.chunk.js",
     "static/js/2.2b825f24.chunk.js.map": "/Respira/static/js/2.2b825f24.chunk.js.map",
     "index.html": "/Respira/index.html",
-    "precache-manifest.964ee6707115fa75156b5c4afac06792.js": "/Respira/precache-manifest.964ee6707115fa75156b5c4afac06792.js",
+    "precache-manifest.6291108e6f4aebcb95c07ec0e7bec79e.js": "/Respira/precache-manifest.6291108e6f4aebcb95c07ec0e7bec79e.js",
     "service-worker.js": "/Respira/service-worker.js",
     "static/css/main.3d537b83.chunk.css.map": "/Respira/static/css/main.3d537b83.chunk.css.map",
     "static/js/2.2b825f24.chunk.js.LICENSE.txt": "/Respira/static/js/2.2b825f24.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.df3d74f6.js",
     "static/js/2.2b825f24.chunk.js",
     "static/css/main.3d537b83.chunk.css",
-    "static/js/main.cbb5484c.chunk.js"
+    "static/js/main.9c6747cf.chunk.js"
   ]
 }
