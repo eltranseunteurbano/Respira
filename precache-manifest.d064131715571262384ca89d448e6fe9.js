@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65c29e6f63ba8c70a47747c000789a99",
+    "revision": "cc79e33187793dd33419236a0391d712",
     "url": "/Respira/index.html"
   },
   {
-    "revision": "db47252c2ded0af50a55",
-    "url": "/Respira/static/css/main.42c81b4f.chunk.css"
+    "revision": "e09303a2b19f0cf508c0",
+    "url": "/Respira/static/css/main.408702c2.chunk.css"
   },
   {
     "revision": "fdf8f10ee81f6a951fdf",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Respira/static/js/2.7f5b43e9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "db47252c2ded0af50a55",
-    "url": "/Respira/static/js/main.6c587df8.chunk.js"
+    "revision": "e09303a2b19f0cf508c0",
+    "url": "/Respira/static/js/main.ca57f9ff.chunk.js"
   },
   {
     "revision": "1e18bb97efee5f9eae5a",
