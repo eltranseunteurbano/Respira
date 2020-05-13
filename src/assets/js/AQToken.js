@@ -1,0 +1,1 @@
+export const AirQualitToken = 'a917b9a5d018b59065d35c202a5816e638e606f3';

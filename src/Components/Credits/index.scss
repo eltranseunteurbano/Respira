@@ -1,0 +1,15 @@
+.Credits{
+    background: var(--black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--white);
+    font-size: 12px;
+
+    a{
+        margin-left: 5px;
+        color: var(--white);
+    }
+}

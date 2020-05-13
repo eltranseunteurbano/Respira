@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+.Logo{
+    display: block;
+    width: max-content;
+    border-bottom: solid 5px var(--white);
+    text-decoration: none;
+
+    padding-bottom: 10px;
+    box-sizing: border-box;
+
+    h1{
+        font-weight: bolder;
+        color: var(--white);
+        font-size: 40px;
+    }
+}

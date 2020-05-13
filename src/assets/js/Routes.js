@@ -1,0 +1,6 @@
+export const HOME = '/'
+export const COLOMBIA = '/colombia'
+export const SALUDABLE = '/saludable'
+export const ENFERMO = '/enfermo'
+export const HUELLA = '/huella'
+export const ERROR404 = '*'
