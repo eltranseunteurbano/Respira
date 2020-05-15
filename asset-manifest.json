@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Respira/static/css/main.6aad487e.chunk.css",
-    "main.js": "/Respira/static/js/main.245372ed.chunk.js",
-    "main.js.map": "/Respira/static/js/main.245372ed.chunk.js.map",
+    "main.css": "/Respira/static/css/main.7e3ffd51.chunk.css",
+    "main.js": "/Respira/static/js/main.5ebb1dff.chunk.js",
+    "main.js.map": "/Respira/static/js/main.5ebb1dff.chunk.js.map",
     "runtime-main.js": "/Respira/static/js/runtime-main.df3d74f6.js",
     "runtime-main.js.map": "/Respira/static/js/runtime-main.df3d74f6.js.map",
-    "static/js/2.f282646f.chunk.js": "/Respira/static/js/2.f282646f.chunk.js",
-    "static/js/2.f282646f.chunk.js.map": "/Respira/static/js/2.f282646f.chunk.js.map",
+    "static/js/2.80de3747.chunk.js": "/Respira/static/js/2.80de3747.chunk.js",
+    "static/js/2.80de3747.chunk.js.map": "/Respira/static/js/2.80de3747.chunk.js.map",
     "index.html": "/Respira/index.html",
-    "precache-manifest.3293765ff9b04dc31ef107cbdee78142.js": "/Respira/precache-manifest.3293765ff9b04dc31ef107cbdee78142.js",
+    "precache-manifest.58c3706be27ec5e2e7aad0603528c39a.js": "/Respira/precache-manifest.58c3706be27ec5e2e7aad0603528c39a.js",
     "service-worker.js": "/Respira/service-worker.js",
-    "static/css/main.6aad487e.chunk.css.map": "/Respira/static/css/main.6aad487e.chunk.css.map",
-    "static/js/2.f282646f.chunk.js.LICENSE.txt": "/Respira/static/js/2.f282646f.chunk.js.LICENSE.txt"
+    "static/css/main.7e3ffd51.chunk.css.map": "/Respira/static/css/main.7e3ffd51.chunk.css.map",
+    "static/js/2.80de3747.chunk.js.LICENSE.txt": "/Respira/static/js/2.80de3747.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.df3d74f6.js",
-    "static/js/2.f282646f.chunk.js",
-    "static/css/main.6aad487e.chunk.css",
-    "static/js/main.245372ed.chunk.js"
+    "static/js/2.80de3747.chunk.js",
+    "static/css/main.7e3ffd51.chunk.css",
+    "static/js/main.5ebb1dff.chunk.js"
   ]
 }
