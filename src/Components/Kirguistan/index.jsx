@@ -21,7 +21,7 @@ const India = ( props ) => {
             if( response === false ) {
                 date = new Date()
                 let utc = 11;
-                let min = 30;
+                let min = 0;
 
                 let tempHour = date.getHours() + utc;
                 let tempMin = date.getMinutes() + min
@@ -30,9 +30,9 @@ const India = ( props ) => {
                 date.setMinutes( tempMin );
                 setHour(date.getHours())
 
-                let awaitData = await getData("chinia")
+                let awaitData = await getData("kyrgyzstan")
                 awaitData.date = date;
-                awaitData.country = "china";
+                awaitData.country = "kyrgyzstan";
                 
                 setData( awaitData)    
                 setResponse(true)

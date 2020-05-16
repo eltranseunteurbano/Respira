@@ -20,8 +20,8 @@ const India = ( props ) => {
         const callbackData = async () => {
             if( response === false ) {
                 date = new Date()
-                let utc = 11;
-                let min = 30;
+                let utc = 13;
+                let min = 0;
 
                 let tempHour = date.getHours() + utc;
                 let tempMin = date.getMinutes() + min
@@ -30,9 +30,9 @@ const India = ( props ) => {
                 date.setMinutes( tempMin );
                 setHour(date.getHours())
 
-                let awaitData = await getData("india")
+                let awaitData = await getData("china")
                 awaitData.date = date;
-                awaitData.country = "india";
+                awaitData.country = "china";
                 
                 setData( awaitData)    
                 setResponse(true)

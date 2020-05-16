@@ -86,8 +86,6 @@ const Huella = () => {
         let energia = ( ( electrodomesticos + convencionales + ahorradores ) / personas ) + celulares + encendidos + calentador + bano + dientes + wc;
         let total = alimentos + transporte + energia;
 
-        console.log(energia)
-
         if( total < 15379 ){
             resultado.limites = "Vives dentro de los límites del planeta. ¡Bien Hecho!"
             resultado.consumo = "0.1 hag - 1.6 hag"
@@ -111,9 +109,45 @@ const Huella = () => {
 
         resultado.puntaje = total
 
-        setHuella(resultado);
-        console.log(resultado)
+        setHuella(resultado);        
+    }
+
+    const onReset = () => {
+        setStep(1);
+        setFruta(0)
+        setVerdura(0)
+        setTortilla(0)
         
+        setRes(0)
+        setPollo(0)
+        setCerdo(0)
+        setPescado(0)
+
+        setYogurt(0)
+        setLeche(0)
+
+        setPromedio(0)
+    
+        setGaseosa(0)
+        setAgua(0)
+        setCerveza(0)
+        setCigarrillos(0)
+
+        setMIO(0)
+        setAvion(0)
+        setAuto(0)
+        setKmAuto(0)
+
+        setElectrodomesticos(0)
+        setConvencionales(0)
+        setAhorradores(0)
+        setPersonas(1)
+        setCelulares(0)
+        setEncendidos(0)
+        setCalentador(0)
+        setBano(149)
+        setDientes(1)
+        setWc(0)
     }
     
     return(
@@ -190,7 +224,7 @@ const Huella = () => {
 
                 { step === 12 &&
                     <div className="huella__btns__final">
-                        <button className="huella__btns__final__item"> Volver a tomar el test de la huella verde</button>
+                        <button className="huella__btns__final__item" onClick={onReset}> Volver a tomar el test de la huella verde</button>
                         <Link to={ Routes.HOME }>Volver al inicio</Link>
                     </div>
                     

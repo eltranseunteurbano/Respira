@@ -61,6 +61,11 @@ const DataCard = ( props ) => {
         } else if ( country === 'india' ) {
             setFlagCountry('/img/flags/in.svg')
             setShowCountry([false, false, true])
+
+        } else if ( country === 'china') {
+            setFlagCountry('/img/flags/cn.svg')
+            setShowCountry([false, false, true])
+
         }
     }
 
@@ -111,7 +116,7 @@ const DataCard = ( props ) => {
         <section className="Datacard">
             <article className="Datacard__body">
                 <div className="Datacard__body__flag" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + flagCountry + ")" }}></div>
-                
+                <div className="Datacard__body__name"> {props.data.country} </div>
                 <div className="Datacard__body__state">
 
                     <div className="Datacard__body__state__header" style={{ backgroundColor: AQIvalue.background }}>
@@ -143,6 +148,8 @@ const DataCard = ( props ) => {
                 !showCountry[2] &&
                 <Link to={ Routes.ENFERMO } className="Datacard__btn negative"> País más contaminado del mundo </Link>
             }
+
+                <Link to = { Routes.HUELLA } className="Datacard__btn huella"> Mide tu huella verde </Link>
             <h1 className="Datacard__message">Tu pantalla no tiene el ancho suficiente para visualizar gráficamente la calidad de aire.</h1>
         </section>
         
