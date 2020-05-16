@@ -1,0 +1,15 @@
+.numeroPreguntas {
+    width: 100%;
+    
+    &__progress{
+        max-width: 100%;
+        background: #DCDFE1;
+        
+        .progress{
+            max-width: 100%;
+            background-color: var(--orange);
+            height: 10px;
+            transition: all .4s;
+        }
+    }
+}

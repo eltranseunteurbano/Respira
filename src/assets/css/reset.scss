@@ -49,3 +49,11 @@ table {
 p{
 	line-height: 1.4;
 }
+
+#root{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}

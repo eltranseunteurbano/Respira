@@ -13,7 +13,6 @@ const getData = async ( country = null ) => {
             let dataCountry = {
                 aqi,
             }
-            console.log(data.data)
             return dataCountry;
         }
     } catch ( error ) {

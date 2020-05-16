@@ -10,7 +10,7 @@ const imagesHour = ['/img/hours/morning.svg', '/img/hours/noon.svg', '/img/hours
 const DataCard = ( props ) => {
 
     const [ AQIvalue, setAQIValue ] = React.useState( {} )
-    const [ flagCountry, setFlagCountry ] = React.useState('/img/flags/co.svg');
+    const [ flagCountry, setFlagCountry ] = React.useState('');
     const [ showCountry, setShowCountry ] = React.useState([true, false, false]);
 
     const qualityAirData = [
@@ -78,10 +78,10 @@ const DataCard = ( props ) => {
         } else if( aqi > 150 && aqi <= 200 ) {
             setAQIValue ( qualityAirData[3] )
 
-        } else if ( aqi > 200 && aqi <= 200 ) {
+        } else if ( aqi > 200 && aqi <= 300 ) {
             setAQIValue ( qualityAirData[4] ) 
 
-        } else if ( aqi > 200 ) {
+        } else if ( aqi > 300 ) {
             setAQIValue ( qualityAirData[5] )
         }    
     }
@@ -89,7 +89,7 @@ const DataCard = ( props ) => {
     onChangeFlag(props.data.country)
     onChangeAQI(props.data.aqi)
 
-    }, [])
+    },[props])
     
     let hour = props.data.date.getHours();
     let min = props.data.date.getMinutes()
@@ -100,16 +100,17 @@ const DataCard = ( props ) => {
         dayTime = imagesHour[0]
     } else if ( hour > 12 && hour <= 15 ) {
         dayTime = imagesHour[1]
-    } else if ( hour > 15 && hour <= 19 ) {
+    } else if ( hour > 15 && hour <= 18 ) {
         dayTime = imagesHour[2]
     } else {
         dayTime = imagesHour[3]
     }
 
     return(
+        <>
         <section className="Datacard">
             <article className="Datacard__body">
-                <div className="Datacard__body__flag" style={{ backgroundImage: "url(" + flagCountry + ")" }}></div>
+                <div className="Datacard__body__flag" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + flagCountry + ")" }}></div>
                 
                 <div className="Datacard__body__state">
 
@@ -127,22 +128,25 @@ const DataCard = ( props ) => {
                     <div className="Datacard__body__hour__img">
                         <img src={ process.env.PUBLIC_URL + dayTime } alt="Imange de hora"/>
                     </div>
-                        <p className="Datacard__body__hour__text"><strong>Hora</strong><br /> {hour < 10 ? "0" + hour : hour}:{min < 10 ? "0" + min() : min}</p>
+                        <p className="Datacard__body__hour__text"><strong>Hora</strong><br /> {hour < 10 ? "0" + hour : hour}:{min < 10 ? "0" + min : min}</p>
                 </div>
 
             </article>
             {
                 !showCountry[0] &&
-                <Link to = { Routes.COLOMBIA } className="Datacard__btn"> Colombia </Link>
+                <Link to = { Routes.COLOMBIA } className="Datacard__btn neutro"> Colombia </Link>
             }{
                 !showCountry[1] && 
-                <Link to = { Routes.SALUDABLE } className="Datacard__btn"> Kirguistan </Link>
+                <Link to = { Routes.SALUDABLE } className="Datacard__btn positive"> País menos contaminado del mundo </Link>
 
             }{
                 !showCountry[2] &&
-                <Link to={ Routes.ENFERMO } className="Datacard__btn"> India </Link>
+                <Link to={ Routes.ENFERMO } className="Datacard__btn negative"> País más contaminado del mundo </Link>
             }
+            <h1 className="Datacard__message">Tu pantalla no tiene el ancho suficiente para visualizar gráficamente la calidad de aire.</h1>
         </section>
+        
+        </>
     )
 
 }

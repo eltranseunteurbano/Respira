@@ -25,4 +25,6 @@ yarn-error.log*
 
 /src/assets/js/AQToke.js
 /README.MD
+
+/src/assets/js/AQToken.js
 /yarn.lock
